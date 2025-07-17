@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collaboration party</title>
+    <title>Freelancing Team | Web Development</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6fb;
+            color: #222;
+        }
+        header {
+            background: #2d3e50;
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .services, .projects {
+            margin-bottom: 2.5rem;
+        }
+        .services-list, .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .service, .project {
+            flex: 1 1 250px;
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .service h3, .project h3 {
+            margin-top: 0;
+        }
+        footer {
+            background: #2d3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 700px) {
+            .services-list, .projects-list {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    Hi this is a test
+    <header>
+        <h1>Our Freelancing Team</h1>
+        <p>Professional Web Development Services</p>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <div class="service">
+                    <h3>Website Design</h3>
+                    <p>Modern, responsive, and user-friendly website designs tailored to your brand.</p>
+                </div>
+                <div class="service">
+                    <h3>Web Application Development</h3>
+                    <p>Custom web apps using the latest technologies for your business needs.</p>
+                </div>
+                <div class="service">
+                    <h3>E-commerce Solutions</h3>
+                    <p>End-to-end e-commerce platforms with secure payment integration.</p>
+                </div>
+                <div class="service">
+                    <h3>Maintenance & Support</h3>
+                    <p>Ongoing support, updates, and troubleshooting for your web projects.</p>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2>Our Projects</h2>
+            <div class="projects-list">
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal portfolio for a designer, featuring animations and a blog.</p>
+                </div>
+                <div class="project">
+                    <h3>Online Store</h3>
+                    <p>Full-featured e-commerce site with product management and payment gateway.</p>
+                </div>
+                <div class="project">
+                    <h3>Business Dashboard</h3>
+                    <p>Custom analytics dashboard for a startup, with real-time data visualization.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Our Freelancing Team. All rights reserved.
+    </footer>
 </body>
 </html>
